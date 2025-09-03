@@ -25,8 +25,7 @@ module "firewall_policy" {
 }
 
 module "virtual_wan" {
-  source  = "Azure/avm-ptn-virtualwan/azurerm"
-  version = "0.12.3"
+  source  = "https://github.com/cs-iliev/terraform-azurerm-avm-ptn-virtualwan.git"
 
   location                              = var.virtual_wan_settings.location
   resource_group_name                   = var.virtual_wan_settings.resource_group_name
